@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".InsertDataActivity_02">
+
+    <LinearLayout
+        android:id="@+id/Top_Layout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Top_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000000"
+            android:shadowDx="2.5"
+            android:shadowDy="2.3"
+            android:shadowRadius="10.6"
+            android:text="ข้อมูลวินิจฉัย"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Text01_Layout"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Top_Layout">
+
+        <TextView
+            android:id="@+id/Anorxia_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2.5"
+            android:shadowDy="2.3"
+            android:shadowRadius="10.6"
+            android:text="อาการเบื่ออาหาร"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/Anorxia_spinner"
+            style="@style/input_info"
+            android:layout_marginTop="5dp"
+            tools:ignore="LabelFor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Text02_Layout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text01_Layout">
+
+        <TextView
+            android:id="@+id/Authority_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2.5"
+            android:shadowDy="2.3"
+            android:shadowRadius="10.6"
+            android:text="มีความเคารพต่อผู้อื่น"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/Authority_spinner"
+            style="@style/input_info"
+            android:layout_marginTop="5dp"
+            tools:ignore="LabelFor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Text03_Layout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text02_Layout">
+
+        <TextView
+            android:id="@+id/Explanation_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2.5"
+            android:shadowDy="2.3"
+            android:shadowRadius="10.6"
+            android:text="สามารถอ่านบรรยากาศได้"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/Explanation_spinner"
+            style="@style/input_info"
+            android:layout_marginTop="5dp"
+            tools:ignore="LabelFor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Text05_Layout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text03_Layout">
+
+        <TextView
+            android:id="@+id/Aggressive_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2.5"
+            android:shadowDy="2.3"
+            android:shadowRadius="10.6"
+            android:text="มีการตอบสนองที่ก้าวร้าว"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/Aggressive_spinner"
+            style="@style/input_info"
+            android:layout_marginTop="5dp"
+            tools:ignore="LabelFor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Text06_Layout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text05_Layout">
+
+        <TextView
+            android:id="@+id/MoveOn_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2.5"
+            android:shadowDy="2.3"
+            android:shadowRadius="10.6"
+            android:text="สามารถมูฟออนได้"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/MoveOn_spinner"
+            style="@style/input_info"
+            android:layout_marginTop="5dp"
+            tools:ignore="LabelFor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Text07_Layout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text06_Layout">
+
+        <TextView
+            android:id="@+id/Breakdown_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2.5"
+            android:shadowDy="2.3"
+            android:shadowRadius="10.6"
+            android:text="มีอาการทางประสาท"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/Breakdown_spinner"
+            style="@style/input_info"
+            android:layout_marginTop="5dp"
+            tools:ignore="LabelFor" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Next_Button"
+        style="@style/button_black"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:text="ต่อไป"
+        android:textSize="20sp"
+        android:shadowColor="#000000"
+        android:shadowDx="2.5"
+        android:shadowDy="2.3"
+        android:shadowRadius="10.6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text07_Layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

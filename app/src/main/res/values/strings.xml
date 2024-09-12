@@ -1,0 +1,4 @@
+<resources>
+    <string name="root_url">http://10.13.4.241:3000/api/depression</string>
+    <string name="app_name">Depression</string>
+</resources>
